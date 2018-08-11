@@ -1,0 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = "$(inherited)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks"
+OTHER_LDFLAGS = -framework PackageKit
+
+// SwiftPM doesn't seem to pick the executable name specified in Package.swift
+// when generating Xcode project
+PRODUCT_NAME = unxip
