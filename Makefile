@@ -32,6 +32,10 @@ install: build
 generate-xcodeproj:
 	$(SWIFT) package generate-xcodeproj --xcconfig-overrides Configs.xcconfig
 
+.PHONY: uninstall
+uninstall:
+	$(RM) "$(BINARY_DIRECTORY)/$(BINARY_NAME)" "$(BUILD_DIRECTORY)/$(FRAMEWORK_NAME)"
+
 .PHONY: clean
 clean:
 	$(XCODEBUILD) clean
