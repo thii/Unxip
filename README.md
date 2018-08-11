@@ -9,7 +9,8 @@ A Swift command line tool to extract signed archives (.xip files).
 
 ## Installation
 
-Download from [Releases](https://github.com/thii/Unxip/releases) page or install from source:
+Download from the [Releases](https://github.com/thii/Unxip/releases) page,
+extract everythin to `/usr/local/bin` or install from source:
 
     make install
 
