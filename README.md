@@ -8,11 +8,13 @@
 A Swift command line tool to extract signed archives (.xip files).
 
 ## Installation
+### Homebrew
 
-Download from the [Releases](https://github.com/thii/Unxip/releases) page,
-extract everythin to `/usr/local/bin` or install from source:
+    $ brew install thii/unxip/unxip
 
-    make install
+### Build from source
+
+    $ make install
 
 ## Usage
 
