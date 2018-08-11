@@ -57,6 +57,11 @@ uninstall:
 
 .PHONY: clean
 clean:
-	$(XCODEBUILD) clean
+	$(XCODEBUILD) clean -project UnxipStatic.xcodeproj
+	$(RM) build
+
+.PHONY: spm-clean
+spm-clean:
+	$(XCODEBUILD) clean -project Unxip.xcodeproj
 	$(SWIFT) package clean
-	$(RM) build Unxip.xcodeproj
+	$(RM) Unxip.xcodeproj
