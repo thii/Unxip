@@ -1,4 +1,8 @@
+import Foundation
+
+#if canImport(UnxipKit)
 import UnxipKit
+#endif
 
 let args = CommandLine.arguments
 
