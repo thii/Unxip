@@ -28,15 +28,15 @@ build:
 
 .PHONY: package
 package: build
-	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP) "$(BINARY_NAME)" "$(PACKAGE_NAME).zip"
+	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP)  "$(PACKAGE_NAME).zip" "$(BINARY_NAME)"
 
 .PHONY: install
 install: build
 	$(CP) "$(OUTPUT_EXECUTABLE)" "$(BINARY_DIRECTORY)"
 
 .PHONY: spm-build
-spm-build: generate-xcodeproj
-	$(XCODEBUILD) build -target Unxip
+spm-build: spm-generate-xcodeproj
+	$(XCODEBUILD) build -project Unxip.xcodeproj -target Unxip
 
 .PHONY: spm-install
 spm-install: spm-build
@@ -45,7 +45,7 @@ spm-install: spm-build
 
 .PHONY: spm-package
 spm-package: spm-build
-	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP) "$(BINARY_NAME)" "$(FRAMEWORK_NAME)" "$(PACKAGE_NAME).zip"
+	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP)  "$(PACKAGE_NAME).zip" "$(BINARY_NAME)" "$(FRAMEWORK_NAME)"
 
 .PHONY: spm-generate-xcodeproj
 spm-generate-xcodeproj:
