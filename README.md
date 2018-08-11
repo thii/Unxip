@@ -16,3 +16,8 @@ Download from [Releases](https://github.com/thii/Unxip/releases) page or install
 ## Usage
 
     $ unxip <input-xip-file> [<output-directory>]
+
+## License
+MIT
+
+Icon is provided free by [Icons8](https://icons8.com) under Creative Commons Attribution-NoDerivs 3.0 Unported.
