@@ -2,7 +2,7 @@ import UnxipKit
 
 let args = CommandLine.arguments
 
-if args.count == 1 {
+if args.count == 1 || args.contains("-h") || args.contains("--help") {
     print("Usage: unxip <input-xip-file> [<output-directory>]", terminator: "\n\n")
     print("       Extract a signed archive.")
     exit(0)
@@ -37,6 +37,6 @@ do {
 
     runner.wait()
 } catch {
-    print(error)
+    print(error.localizedDescription)
     exit(1)
 }
