@@ -70,7 +70,7 @@
 				84192CF6211F32FF0099068D /* Runner.swift */,
 				84192CF8211F331E0099068D /* UnxipKit.h */,
 			);
-			path = Unxip;
+			name = Unxip;
 			sourceTree = "<group>";
 		};
 		84192CE9211F172D0099068D /* Frameworks */ = {
