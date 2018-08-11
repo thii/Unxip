@@ -1,4 +1,8 @@
-![](.github/icons8-archive-80.png)
+<p align="center">
+<a href="https://github.com/thii/Unxip">
+<img src=".github/icons8-archive-80.png" alt="Unxip" />
+</a>
+</p>
 
 # Unxip
 A Swift command line tool to extract signed archives (.xip files).
