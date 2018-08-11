@@ -28,7 +28,7 @@ build:
 
 .PHONY: package
 package: build
-	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP)  "$(PACKAGE_NAME).zip" "$(BINARY_NAME)"
+	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP)  "$(BINARY_NAME).zip" "$(BINARY_NAME)"
 
 .PHONY: install
 install: build
