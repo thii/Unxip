@@ -45,7 +45,7 @@ spm-install: spm-build
 
 .PHONY: spm-package
 spm-package: spm-build
-	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP)  "$(PACKAGE_NAME).zip" "$(BINARY_NAME)" "$(FRAMEWORK_NAME)"
+	$(CD) "$(BUILD_DIRECTORY)" && $(ZIP) "$(PACKAGE_NAME).zip" "$(BINARY_NAME)" "$(FRAMEWORK_NAME)"
 
 .PHONY: spm-generate-xcodeproj
 spm-generate-xcodeproj:
@@ -53,7 +53,7 @@ spm-generate-xcodeproj:
 
 .PHONY: uninstall
 uninstall:
-	$(RM) "$(BINARY_DIRECTORY)/$(BINARY_NAME)" "$(BUILD_DIRECTORY)/$(FRAMEWORK_NAME)"
+	$(RM) "$(BINARY_DIRECTORY)/$(BINARY_NAME)" "$(BINARY_DIRECTORY)/$(FRAMEWORK_NAME)"
 
 .PHONY: clean
 clean:
