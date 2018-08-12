@@ -4,7 +4,7 @@
 </a>
 </p>
 
-# Unxip
+# Unxip [![Build Status](https://travis-ci.org/thii/Unxip.svg?branch=master)](https://travis-ci.org/thii/Unxip)
 A Swift command line tool to extract signed archives (.xip files).
 
 ## Installation
