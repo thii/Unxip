@@ -4,15 +4,12 @@ CD=cd
 CP=$(shell whereis cp) -Rf
 MKDIR=$(shell whereis mkdir) -p
 RM=$(shell whereis rm) -rf
-RSYNC=$(shell whereis rsync) --archive --delete
 SWIFT=$(shell whereis swift)
-XCODEBUILD=$(shell whereis xcodebuild)
 ZIP=$(shell whereis zip) -r
 
 TARGET_PLATFORM=x86_64-apple-macosx10.10
 
 BINARY_DIRECTORY=$(PREFIX)/bin
-FRAMEWORKS_DIRECTORY=$(PREFIX)/Frameworks
 BINARY_NAME=unxip
 
 BUILD_DIRECTORY=$(shell pwd)/.build/$(TARGET_PLATFORM)/release
@@ -37,7 +34,7 @@ generate-xcodeproj:
 
 .PHONY: uninstall
 uninstall:
-	$(RM) "$(BINARY_DIRECTORY)/$(BINARY_NAME)" "$(BINARY_DIRECTORY)/$(FRAMEWORK_NAME)"
+	$(RM) "$(BINARY_DIRECTORY)/$(BINARY_NAME)"
 
 .PHONY: clean
 clean:
