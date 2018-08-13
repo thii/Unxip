@@ -36,11 +36,10 @@ install: build
 
 .PHONY: spm-build
 spm-build: spm-generate-xcodeproj
-	$(XCODEBUILD) build -project Unxip.xcodeproj -target Unxip
+	$(SWIFT) build -c release -Xswiftc -static-stdlib -Xlinker -F/System/Library/PrivateFrameworks -Xlinker -framework -Xlinker PackageKit
 
 .PHONY: spm-install
 spm-install: spm-build
-	$(RSYNC) "$(OUTPUT_FRAMEWORK_PATH)" "$(BINARY_DIRECTORY)"
 	$(CP) "$(OUTPUT_EXECUTABLE)" "$(BINARY_DIRECTORY)"
 
 .PHONY: spm-package

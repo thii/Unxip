@@ -7,7 +7,7 @@ let package = Package(
     name: "Unxip",
     products: [
         .executable(
-            name: "Unxip",
+            name: "unxip",
             targets: ["Unxip"]),
     ],
     dependencies: [
