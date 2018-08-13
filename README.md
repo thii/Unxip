@@ -20,7 +20,8 @@ A Swift command line tool to extract signed archives (.xip files).
 
     $ unxip <input-xip-file> [<output-directory>]
 
+## Credits
+Icon is provided free by [Icons8](https://icons8.com) under Creative Commons Attribution-NoDerivs 3.0 Unported.
+
 ## License
 MIT
-
-Icon is provided free by [Icons8](https://icons8.com) under Creative Commons Attribution-NoDerivs 3.0 Unported.
