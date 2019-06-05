@@ -9,6 +9,9 @@ let package = Package(
         .executable(
             name: "unxip",
             targets: ["Unxip"]),
+        .library(
+            name: "UnxipKit",
+            targets: ["UnxipKit"]),
     ],
     dependencies: [
     ],
